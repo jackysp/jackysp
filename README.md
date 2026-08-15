@@ -8,11 +8,18 @@ in the TiDB repository.
 
 My distributed-systems work spans transaction correctness, GC safety,
 initial data distribution, observability, performance, and compatibility.
-I am currently exploring how the same engineering principles apply to
-agent runtimes and AI infrastructure.
+I am now applying those engineering principles to AI infrastructure by
+building [agentd](https://github.com/minifish-org/agentd), a durable
+single-host runtime for personal agents.
 
 ## Selected systems work
 
+- **Reliable agent runtimes** — built and released
+  [agentd v0.1.0-alpha.1](https://github.com/minifish-org/agentd/releases/tag/v0.1.0-alpha.1)
+  with scoped execution, explicit capability boundaries, inspectable traces,
+  and transactional delivery. Its independent
+  [Telegram adapter](https://github.com/minifish-org/agentd-telegram-adapter)
+  keeps transport concerns outside the core runtime.
 - **Transaction correctness** — implemented and hardened
   [Read Committed for pessimistic transactions](https://github.com/pingcap/tidb/pull/14087)
   across timestamp ownership, subqueries, executor fast paths, and lock semantics.
